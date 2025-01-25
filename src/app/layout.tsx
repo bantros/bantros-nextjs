@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -14,6 +13,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
+      <head>
+        <link
+          rel='icon'
+          type='image/png'
+          href='/favicon-96x96.png'
+          sizes='96x96'
+        />
+        <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+        <link rel='shortcut icon' href='/favicon.ico' />
+        <link
+          rel='apple-touch-icon'
+          sizes='180x180'
+          href='/apple-touch-icon.png'
+        />
+        <link rel='manifest' href='/site.webmanifest' />
+        <meta name='apple-mobile-web-app-title' content='Bantros' />
+      </head>
       <body className='font-system text-base text-white bg-black antialiased'>
         <div className='app'>
           <header className='p-8 md:p-16'>
