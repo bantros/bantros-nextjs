@@ -37,7 +37,7 @@ const SpotifyPlayer = ({
       </h2>
 
       <div className='relative inline-flex items-center gap-x-4 w-full md:w-fit md:min-w-96 p-2 bg-black border border-gray-800'>
-        {duration_ms && progress_ms && (
+        {playing && duration_ms && progress_ms && (
           <Timeline duration={duration_ms} progress={progress_ms} />
         )}
 
